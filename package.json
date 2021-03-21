@@ -3,8 +3,6 @@
   "version": "0.0.1",
   "description": "UI组件库",
   "main": "lib/index.js",
-  "module": "es/index.js",
-  "sideEffects": false,
   "scripts": {
     "build": "node build/index"
   },

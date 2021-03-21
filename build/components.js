@@ -23,10 +23,6 @@ const build = async (name) => {
   const bundle = await rollup.rollup(inputOptions);
   const outOptions = [
     {
-      formate: "es",
-      dir: path.resolve(__dirname, `../es/${name}`),
-    },
-    {
       formate: "cjs",
       dir: path.resolve(__dirname, `../lib/${name}`),
     },
