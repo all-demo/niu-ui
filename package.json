@@ -1,0 +1,43 @@
+{
+  "name": "niu-ui",
+  "version": "1.0.0",
+  "description": "UI组件库",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "scripts": {
+    "build": "node build/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/all-demo/niu-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/all-demo/niu-ui/issues"
+  },
+  "homepage": "https://github.com/all-demo/niu-ui#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-syntax-jsx": "^7.12.13",
+    "@babel/plugin-transform-react-jsx": "^7.12.17",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "fs-extra": "^9.1.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.42.1",
+    "rollup-plugin-postcss": "^4.0.0"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.13.8",
+    "antd": "^4.14.0",
+    "core-js": "3",
+    "element-plus": "^1.0.2-beta.35",
+    "react": "^17.0.1"
+  }
+}
