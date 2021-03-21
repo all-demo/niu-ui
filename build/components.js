@@ -21,19 +21,14 @@ const build = async (name) => {
     external: Object.keys(pkg.dependencies).filter((name) => name !== "lodash"),
   };
   const bundle = await rollup.rollup(inputOptions);
-  const outOptions = [
-    {
-      formate: "es",
-      dir: path.resolve(__dirname, `../es/${name}`),
-    },
-    {
-      formate: "cjs",
-      dir: path.resolve(__dirname, `../lib/${name}`),
-    },
-  ];
-  for (const option of outOptions) {
-    await bundle.write(option);
-  }
+  const outOptions =
+  {
+    formate: "es",
+    dir: path.resolve(__dirname, `../es/${name}`),
+  };
+  
+    await bundle.write(outOptions);
+
 };
 
 /**
