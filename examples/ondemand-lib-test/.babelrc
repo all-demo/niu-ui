@@ -1,0 +1,10 @@
+{
+    "plugins": [
+        [
+            "import",
+            {
+                "libraryName": "niu-ui"
+            }
+        ]
+    ]
+}
