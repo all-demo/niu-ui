@@ -1,2 +1,4 @@
 export { default as NHello } from "./NHello";
 export { default as NWorld } from "./NWorld";
+
+export { default as Affix } from "./affix";
