@@ -18,7 +18,7 @@ const build = async (name) => {
       babel({ exclude: "node_modules/**", include: "src/**" }),
       postcss(),
     ],
-    external: Object.keys(pkg.dependencies),
+    external: Object.keys(pkg.dependencies).filter((name) => name !== "lodash"),
   };
   const bundle = await rollup.rollup(inputOptions);
   const outOptions = [

@@ -1,9 +1,10 @@
 {
   "name": "niu-ui",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "UI组件库",
-  "main": "./lib/index.js",
-  "module": "./es/index.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "sideEffects": false,
   "scripts": {
     "build": "node build/index"
   },
@@ -38,6 +39,7 @@
     "antd": "^4.14.0",
     "core-js": "3",
     "element-plus": "^1.0.2-beta.35",
+    "lodash": "^4.17.21",
     "react": "^17.0.1"
   }
 }
